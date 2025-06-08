@@ -1,4 +1,3 @@
-runs/detect/train*
 runs/detect/val*
 yolo*
 annotated
