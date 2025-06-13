@@ -26,17 +26,20 @@ https://app.roboflow.com/mahjongshifu/mahjong_shifu/5
 
 **runs\detect:** This directory contains all the weights of the different version of our models and also contain the validation results for each of the models. Explanation of each subdirectory:
 
+---TRAINING--- contains training images, results metrics, and weights
 * Train6_old: This is the directory for Model V1
 * train: Directory for Model V2
 * train2: Directory for Model V3
 * train3: Directory for Model V4
 * train4: Directory for a model we trained from scratch using the final version of our dataset. (This model is not included the report)
 * trainLarge: Directory for Model Large
+---PREDICTIONS--- : contains images annotated by our model
 * predict: Directory of Model V1 prediction on the test split.
 * predict2: Directory of Model V2 prediction on the test split.
 * predict3: Directory of Model V3 prediction on the test split.
 * predict4: Directory of Model V4 prediction on the test split.
 * predictLarge: Directory of Model Large prediction on the test split.
+---VALIDATIONS--- : contains visuals of the validation
 * val4: Directory of Model V4 validation on the test split.
 * valLarge: Directory of Model Large validation on the test split
 
