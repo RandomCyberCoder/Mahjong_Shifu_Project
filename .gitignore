@@ -1,4 +1,3 @@
-runs/detect/val*
 yolo*
 annotated
 venv
