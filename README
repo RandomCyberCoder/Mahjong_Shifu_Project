@@ -1,5 +1,8 @@
 Images that create the tile_images dataset are obtained from https://universe.roboflow.com/jon-chan-gnsoa/mahjong-baq4s/dataset/54 . The images used in the our mini dataset include all the test images and selected images from the train set. When selecting images from the train set we included the agumented versions of them to (rotation and rgb->grayscale).
 
+# Our annotated dataset used to train our models
+https://app.roboflow.com/mahjongshifu/mahjong_shifu/5 
+
 # Jupyter notebooks explanation:
 **active_learning.ipynb:** This has the code for our complete active learning pipline.
 
