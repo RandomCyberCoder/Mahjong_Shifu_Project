@@ -1,1 +1,32 @@
 Images that create the tile_images dataset are obtained from https://universe.roboflow.com/jon-chan-gnsoa/mahjong-baq4s/dataset/54 . The images used in the our mini dataset include all the test images and selected images from the train set. When selecting images from the train set we included the agumented versions of them to (rotation and rgb->grayscale).
+
+# Jupyter notebooks explanation:
+**active_learning.ipynb:** This has the code for our complete active learning pipline.
+
+**augment_data.ipynb:** contains a code snippet used to manually augment images.
+
+**project.ipynb:** contains the code we used to train and validate the model. It includes our first version of active learning. This file also includes the code used for running the live camera feed and saving a frames of the camera feed to add to our unlabeled dataset.
+
+# Directory structure
+**active_learning:** This directory contains four subdirectories 
+
+* unlabled_archive: contains the all images that have been marked to for manual annotation throughout all runs of the active learning.
+* unlabled_data: this directory is the dataset containing all unlabeled images
+* unlabeled_labeled: contains the predictions the model made on the unlabeled dataset during an active training run.
+* unlabeled_to_label: contains the images marked for manual annotation after a active learning run is completed.
+
+**additional_images & backup:** Both of these directories can be ignored.
+
+**runs\detect:** This directory contains all the weights of the different version of our models and also contain the validation results for each of the models. Explanation of each subdirectory:
+
+* Train6_old: This is the directory for version 1 of our model
+* train: Directory for version 2 of the model
+* train2: Directory for version 3 of the model
+* train3: Directory for version 4 of the model
+* train4: Directory for a model we trained from scratch using the final version of our dataset. (This model is not included the report)
+* predict: Directory of model V1 prediction on the test split.
+* predict2: Directory of model V2 prediction on the test split.
+* predict3: Directory of model V3 prediction on the test split.
+* predict4: Directory of model V4 prediction on the test split.
+
+**tile_images:** This directory can be ignored. It was originally used to store the first version of our dataset that can be found on Roboflow
