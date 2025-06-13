@@ -37,6 +37,7 @@ https://app.roboflow.com/mahjongshifu/mahjong_shifu/5
 * predict3: Directory of Model V3 prediction on the test split.
 * predict4: Directory of Model V4 prediction on the test split.
 * predictLarge: Directory of Model Large prediction on the test split.
+* val4: Directory of Model V4 validation on the test split.
 * valLarge: Directory of Model Large validation on the test split
 
 **tile_images:** This directory can be ignored. It was originally used to store the first version of our dataset that can be found on Roboflow
